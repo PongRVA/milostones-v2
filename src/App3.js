@@ -4,17 +4,16 @@ import Main from "./Main";
 import Footer from "./Footer";
 import data from "./data";
 
+import { onSnapshot, addDoc, doc, deleteDoc, setDoc } from "firebase/firestore";
+import { notesCollection, db } from "./FBconfig";
+
 export default function App() {
-  //initialize darkMode state & reverse order to false
+  //initialize darkMode state to false
   const [darkMode, setDarkMode] = React.useState(false);
-  const [reverse, setReverse] = React.useState(false);
 
   //handles toggle change and updates darkMode
   function toggleDarkMode() {
     setDarkMode((prevMode) => !prevMode);
-  }
-  function toggleReverse() {
-    setReverse((prevOrder) => !prevOrder);
   }
 
   //maps through datafile, passes props to main component which
@@ -30,15 +29,11 @@ export default function App() {
     <div className={containerAddDark}>
       <Header
         darkMode={darkMode}
-        reverse={reverse}
-        toggleReverse={toggleReverse}
         //pass in prop as function for onClick event
         toggleDarkMode={toggleDarkMode}
       />
 
-      <div className="main--miloStones">
-        {reverse ? miloStones : miloStones.reverse()}
-      </div>
+      <div className="main--miloStones">{miloStones.reverse()}</div>
       <Footer />
     </div>
   );

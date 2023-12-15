@@ -1,10 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+// import {
+//   getDatabase,
+//   ref,
+//   push,
+// } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+// const appSettings = {
+//   databaseURL: "https://milostones-ca093-default-rtdb.firebaseio.com/",
+// };
+// const app = initializeApp(appSettings);
+// const database = getDatabase(app);
+// const commentsInDB = ref(database, "comments");
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
