@@ -73,7 +73,7 @@ export default function Main(props) {
         )}
       </p>
       <p className="main-description">{props.stone.description}</p>
-      <img className="main-img-stone" src={props.stone.imageUrl} />
+      <img className="main-img-stone" src={props.stone.imageUrl} alt="" />
       <div className="like-comment">
         <div className="like">
           <p>👍 Likes: {props.stone.likes} </p>

@@ -1,5 +1,5 @@
 import React from "react";
-import { v4 as uuidv4 } from "https://jspm.dev/uuid";
+// import { v4 as uuidv4 } from "https://jspm.dev/uuid";
 
 export default function Main(props) {
   const [formData, setFormData] = React.useState({
@@ -28,7 +28,7 @@ export default function Main(props) {
         ID: props.stone.id,
         name: name,
         comment: comment,
-        uuid: uuidv4(),
+        // uuid: uuidv4(),
       }),
     };
     const res = await fetch(
@@ -75,7 +75,7 @@ export default function Main(props) {
         )}
       </p>
       <p className="main-description">{props.stone.description}</p>
-      <img className="main-img-stone" src={props.stone.imageUrl} />
+      <img className="main-img-stone" src={props.stone.imageUrl} alt="" />
       <div className="like-comment">
         <div className="like">
           <p>
