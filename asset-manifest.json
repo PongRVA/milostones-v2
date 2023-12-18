@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/milostones-v2/static/css/main.fdbb247a.css",
+    "main.js": "/milostones-v2/static/js/main.c9df3181.js",
+    "static/js/787.f055211e.chunk.js": "/milostones-v2/static/js/787.f055211e.chunk.js",
+    "index.html": "/milostones-v2/index.html",
+    "main.fdbb247a.css.map": "/milostones-v2/static/css/main.fdbb247a.css.map",
+    "main.c9df3181.js.map": "/milostones-v2/static/js/main.c9df3181.js.map",
+    "787.f055211e.chunk.js.map": "/milostones-v2/static/js/787.f055211e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fdbb247a.css",
+    "static/js/main.c9df3181.js"
+  ]
+}
